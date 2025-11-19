@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yamuna Kurai — Quality Engineer</title>
+  <meta name="description" content="Portfolio of Yamuna Kurai — Quality Engineer. Manual & automation testing, API testing, Python developer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; /* deep slate */
+      --card:#0b1220;
+      --muted:#94a3b8;
+      --accent:#6ee7b7; /* soft green */
+      --glass: rgba(255,255,255,0.03);
+      --radius:14px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:linear-gradient(180deg,#071021 0%,#071427 60%);
+      color:#e6eef6;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+      padding:32px;
+    }
+    .container{max-width:1100px;margin:0 auto}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;gap:16px;align-items:center}
+    .avatar{
+      width:72px;height:72px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;font-weight:700;color:#04202c;font-size:20px;flex-shrink:0
+    }
+    h1{font-size:22px;margin:0}
+    .role{color:var(--muted);font-weight:600;font-size:13px}
+
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+    nav a:hover{color:var(--accent)}
+
+    main{display:grid;grid-template-columns:1fr 360px;gap:28px}
+
+    /* Left column */
+    .panel{background:var(--card);padding:22px;border-radius:var(--radius);box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+    .intro{display:flex;gap:18px;align-items:flex-start}
+    .intro .meta{flex:1}
+    .lede{font-size:15px;color:#cfe6f6;margin-bottom:14px}
+    .cta{display:flex;gap:12px;margin-top:8px}
+    .btn{background:linear-gradient(90deg,var(--accent),#60a5fa);color:#04202c;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--accent)}
+
+    h2.section-title{font-size:14px;margin:0 0 12px 0;color:#dff7ee}
+    .muted{color:var(--muted);font-size:13px}
+
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:var(--glass);padding:8px 10px;border-radius:10px;font-weight:600;font-size:13px;color:#d7eefc}
+
+    /* Experience list */
+    .exp{margin-bottom:12px}
+    .exp h3{margin:0;font-size:15px}
+    .exp .sub{font-size:13px;color:var(--muted);margin-bottom:6px}
+    .exp p{margin:6px 0 0 0;color:#cfe6f6;font-size:14px}
+
+    /* Right column */
+    aside .card{padding:18px;margin-bottom:18px}
+    .contact-list{display:flex;flex-direction:column;gap:8px}
+    .contact-item{display:flex;gap:10px;align-items:center}
+    .contact-item b{min-width:78px;color:var(--muted);font-weight:700}
+    .links a{display:block;text-decoration:none;color:var(--accent);word-break:break-all}
+
+    /* Projects */
+    .projects{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .project{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:12px;border-radius:10px}
+    .project a{text-decoration:none;color:#bfeee0;font-weight:700}
+
+    footer{margin-top:22px;color:var(--muted);font-size:13px;text-align:center}
+
+    /* Responsive */
+    @media (max-width:980px){main{grid-template-columns:1fr;}
+      aside{order:2}
+    }
+
+    /* small utilities */
+    .tagline{font-size:13px;color:var(--muted)}
+    .role-pill{background:rgba(255,255,255,0.02);padding:6px 10px;border-radius:8px;font-weight:700;color:var(--accent);display:inline-block}
+
+    /* subtle animations */
+    .fadein{opacity:0;transform:translateY(8px);animation:enter .6s ease forwards}
+    @keyframes enter{to{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="fadein">
+      <div class="brand">
+        <div class="avatar">YK</div>
+        <div>
+          <h1>Yamuna Kurai</h1>
+          <div class="role">Quality Engineer — Manual & Automation (beginner)</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- LEFT -->
+      <section>
+        <article class="panel fadein" id="about">
+          <div class="intro">
+            <div class="meta">
+              <div class="tagline">Dedicated Quality Engineer with strong experience in manual testing and growing automation skills. Skilled in functional, regression, UAT, and API testing. Passionate about reliable software delivery and test automation.</div>
+
+              <div style="margin-top:14px">
+                <span class="role-pill">Manual Testing</span>
+                <span class="role-pill" style="margin-left:6px">API Testing (Postman)</span>
+              </div>
+
+              <div class="cta" style="margin-top:18px">
+                <a class="btn" href="#contact">Hire / Contact</a>
+                <a class="btn ghost" href="https://kuraiyamuna04.github.io/portfolio/" target="_blank" rel="noopener">Live portfolio</a>
+              </div>
+            </div>
+          </div>
+
+          <hr style="margin:18px 0;border:none;border-top:1px solid rgba(255,255,255,0.03)">
+
+          <section>
+            <h2 class="section-title">Skills & Tools</h2>
+            <div class="skills">
+              <span class="chip">Manual Testing</span>
+              <span class="chip">Functional & Regression</span>
+              <span class="chip">UAT & E2E</span>
+              <span class="chip">API Testing (Postman)</span>
+              <span class="chip">JIRA & Confluence</span>
+              <span class="chip">Zephyr</span>
+              <span class="chip">MySQL / SQL</span>
+              <span class="chip">Python</span>
+              <span class="chip">Selenium (beginner)</span>
+              <span class="chip">TestNG / JUnit (basic)</span>
+              <span class="chip">HTML / CSS / Bootstrap</span>
+              <span class="chip">Git</span>
+            </div>
+          </section>
+
+          <section style="margin-top:18px">
+            <h2 class="section-title">Summary</h2>
+            <p class="muted">I balance meticulous manual testing with growing automation experience — implementing robust test cases, executing test cycles, and tracking defects through to resolution. Comfortable working with Agile teams and learning new tools to improve testing workflows.</p>
+          </section>
+
+          <section id="experience" style="margin-top:18px">
+            <h2 class="section-title">Experience</h2>
+
+            <div class="exp">
+              <h3>Quality Engineer — Accenture</h3>
+              <div class="sub">June 2024 — Present</div>
+              <p>Perform manual testing across functional, regression, smoke, and UAT cycles. Create and maintain test cases, log defects in JIRA, and collaborate with stakeholders to ensure timely fixes. Supporting automation efforts with beginner-level Selenium & TestNG scripting and assisting the automation team.</p>
+            </div>
+
+            <div class="exp">
+              <h3>Python Developer Intern — Surepass Technology</h3>
+              <div class="sub">Feb 2023 — July 2023</div>
+              <p>Built web-scraping and API integration scripts in Python. Processed and analyzed datasets, improved automation scripts, and followed best practices for maintainable code and data workflows.</p>
+            </div>
+
+          </section>
+
+          <section style="margin-top:18px">
+            <h2 class="section-title">Education</h2>
+            <div class="exp">
+              <h3>M.Sc. Computer Science — M.B.G.P.G. College Haldwani</h3>
+              <div class="sub">2023 — 2025</div>
+            </div>
+            <div class="exp">
+              <h3>B.Sc. Computer Science — M.B.G.P.G. College Haldwani</h3>
+              <div class="sub">2019 — 2022</div>
+            </div>
+            <div class="exp">
+              <h3>12th (PCM)</h3>
+              <div class="sub">2018 — 2019</div>
+            </div>
+          </section>
+
+          <section style="margin-top:18px">
+            <h2 class="section-title">Languages & Interests</h2>
+            <p class="muted">Languages: Hindi, English</p>
+            <p class="muted">Hobbies: Digital Illustration, Dancing, Reading, Learning new Technologies</p>
+          </section>
+        </article>
+
+        <article class="panel fadein" id="projects" style="margin-top:18px">
+          <h2 class="section-title">Selected Projects</h2>
+          <div class="projects">
+            <div class="project">
+              <div style="font-size:13px;color:var(--muted)">Portfolio Website</div>
+              <a href="https://kuraiyamuna04.github.io/portfolio/" target="_blank" rel="noopener">kuraiyamuna04.github.io/portfolio</a>
+              <div style="font-size:13px;margin-top:6px;color:var(--muted)">A personal site showcasing projects and contact info (hosted on GitHub Pages).</div>
+            </div>
+
+            <div class="project">
+              <div style="font-size:13px;color:var(--muted)">Python Practice</div>
+              <a href="https://github.com/kuraiyamuna04/task" target="_blank" rel="noopener">GitHub — kuraiyamuna04</a>
+              <div style="font-size:13px;margin-top:6px;color:var(--muted)">Repositories with Python scripts</div>
+            </div>
+          </div>
+        </article>
+
+      </section>
+
+      <!-- RIGHT / SIDEBAR -->
+      <aside>
+        <div class="card panel fadein">
+          <div class="section-title">Contact</div>
+          <div class="contact-list" id="contact" style="margin-top:12px">
+            <div class="contact-item"><b>Email:</b><a href="mailto:yamunakurai78@gmail.com">yamunakurai78@gmail.com</a></div>
+            <div class="contact-item"><b>Phone:</b><a href="tel:+917456820078">+91 74568 20078</a></div>
+            <div class="contact-item"><b>Location:</b><span class="muted">Haldwani, Uttarakhand, India</span></div>
+            <div class="contact-item"><b>Portfolio:</b><a href="https://kuraiyamuna04.github.io/portfolio/" target="_blank">kuraiyamuna04.github.io/portfolio</a></div>
+            <div class="contact-item"><b>GitHub:</b><a href="https://github.com/kuraiyamuna04" target="_blank">github.com/kuraiyamuna04</a></div>
+          </div>
+        </div>
+
+        <div class="card panel fadein">
+          <div class="section-title">Download</div>
+          <p class="muted" style="margin-top:8px">Download a printable version of my resume or view more details on GitHub.</p>
+          <div style="margin-top:8px">
+            <a class="btn" href="/Yamuna_Kurai_Resume.pdf">Download Resume</a>
+          </div>
+        </div>
+
+      </aside>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Yamuna Kurai — Built with care • <span class="muted">Designed for recruiters & collaborators</span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // simple scroll reveal for .fadein elements
+    const items = document.querySelectorAll('.fadein');
+    const obs = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('visible'); })
+    },{threshold:0.08});
+    items.forEach(it=>obs.observe(it));
+  </script>
+</body>
+</html>
